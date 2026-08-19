@@ -18,7 +18,7 @@ The **Warehouse Stock Inventory System** is an enterprise-grade software enginee
 
 ---
 
-## 🗓️ 8-Week Agile Sprint Schedule (July 1 – August 25, 2026)
+## 8-Week Agile Sprint Schedule (July 1 – August 25, 2026)
 The project was executed across an exact **8-week lifecycle (56 calendar days)** structured into four 2-week sprints:
 1. **Sprint 1 (Foundations):** Weeks 1–2 (July 1 – July 14, 2026) — User Authentication (`WMS-01`), Stock Intake (`WMS-02`), Barcode Scanning (`WMS-03`), Stock Availability (`WMS-04`). Total = 13 Story Points.
 2. **Sprint 2 (Inventory Control):** Weeks 3–4 (July 15 – July 28, 2026) — Low-Stock Watchlist (`WMS-05`), Urgent Priority Tagging (`WMS-06`), Atomic Stock Reservation (`WMS-07`). Total = 10 Story Points.
@@ -63,7 +63,7 @@ warehouse-stock-inventory-system/
 
 ---
 
-## 🚀 Deliverables & Version Control Policy
+## Deliverables & Version Control Policy
 * **Branching Strategy:** Feature-branch workflow (`feature/wms-01-auth`, `feature/wms-02-stock-intake`, etc.).
 * **Pull Request Policy:** Peer code/document review required prior to merging into `main`.
 * **Documentation Standard:** APA 7th Edition Student Paper Format.
