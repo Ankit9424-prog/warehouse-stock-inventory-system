@@ -1,229 +1,69 @@
-# Warehouse Stock Inventory System
-
-**Course:** CSE 220: Principles of Software Engineering
-**Institution:** International American University (IAU)
-**Instructor:** Professor Gaman Aryal
-**Date:** August 2026
-
-## 1. Project Overview
-
-The **Warehouse Stock Inventory System (WMS)** is an Agile-engineered software solution designed to streamline warehouse operations and improve inventory accuracy.
-
-The system supports:
-
-* Warehouse stock intake and management
-* Real-time inventory tracking
-* Barcode scanning
-* Order priority routing
-* Automated replenishment purchase orders
-* Immutable audit logging
-* Authentication and request management
-* Quality assurance and systematic testing
-
-The project applies software engineering principles including **Agile Scrum, UML-based system design, Git-based version control, requirements engineering, and software testing**.
+# Warehouse Stock Inventory System (WMS)
+**Course:** CSE 220: Principles of Software Engineering  
+**Institution:** International American University (IAU)  
+**Instructor:** Professor Gaman Aryal  
+**Date:** August 2026  
 
 ---
 
-## 2. Engineering Team & Roles
-
-| Team Member          | Official Role                       | Key Responsibilities                                                      | Assigned User Stories          |
-| -------------------- | ----------------------------------- | ------------------------------------------------------------------------- | ------------------------------ |
-| **Ankit Katwal**     | Team Lead & Lead Software Architect | Architectural design, Use Case and Class models, system coordination      | WMS-01, WMS-03, WMS-06, WMS-10 |
-| **Sabrin Manandhar** | Scrum Master & QA Lead              | Agile sprint coordination, Trello board management, test execution        | WMS-04, WMS-05, WMS-09         |
-| **Shivam Khadka**    | DevOps Lead & Systems Engineer      | GitHub version control, Sequence and Activity models, repository workflow | WMS-02, WMS-07, WMS-08         |
+## 👥 Engineering Team & Roles
+* **Ankit Katwal** — Team Lead & Lead Software Architect (Product Owner)
+* **Sabrin Manandhar** — Scrum Master & Senior QA Lead (Quality Assurance Specialist)
+* **Shivam Khadka** — DevOps Lead & Senior Systems Engineer (Configuration Manager)
 
 ---
 
-## 3. Repository Directory Structure
+## 📌 Project Overview & Scope
+The **Warehouse Stock Inventory System** is an enterprise-grade software engineering project simulating the complete software development lifecycle without raw source-code compilation. The system modernizes manual warehouse logistics through automated intake registration, handheld barcode scanning, real-time availability checking, low-stock threshold alerting, priority order queueing, atomic stock reservation, automated supplier replenishment, itemized dispatch packing slip generation, and immutable transaction audit logging.
 
+---
+
+## 🗓️ 8-Week Agile Sprint Schedule (July 1 – August 25, 2026)
+The project was executed across an exact **8-week lifecycle (56 calendar days)** structured into four 2-week sprints:
+1. **Sprint 1 (Foundations):** Weeks 1–2 (July 1 – July 14, 2026) — User Authentication (`WMS-01`), Stock Intake (`WMS-02`), Barcode Scanning (`WMS-03`), Stock Availability (`WMS-04`). Total = 13 Story Points.
+2. **Sprint 2 (Inventory Control):** Weeks 3–4 (July 15 – July 28, 2026) — Low-Stock Watchlist (`WMS-05`), Urgent Priority Tagging (`WMS-06`), Atomic Stock Reservation (`WMS-07`). Total = 10 Story Points.
+3. **Sprint 3 (Logistics & POs):** Weeks 5–6 (July 29 – August 11, 2026) — Supplier Replenishment PO Transmission (`WMS-08`), Dispatch Slip Generation (`WMS-09`), Immutable Audit Ledger (`WMS-10`). Total = 11 Story Points.
+4. **Sprint 4 (QA & Final Deployment):** Weeks 7–8 (August 12 – August 25, 2026) — Master 40-Case Test Matrix Execution, Git Branch Merging, APA 7th Documentation Finalization, and Final Release Sign-Off.
+
+---
+
+## 📂 Repository Directory Structure
 ```text
 warehouse-stock-inventory-system/
 ├── requirements/
-│   └── requirements_specification.md
-│       # Functional (FR-01 to FR-10) and Non-Functional Requirements
-│
+│   ├── functional_requirements.md        # FR-01 to FR-10 specifications
+│   ├── non_functional_requirements.md    # NFR-01 to NFR-05 specifications
+│   ├── stakeholder_matrix.md             # Stakeholder roles, influence, and engagement
+│   └── user_stories.md                   # WMS-01 to WMS-10 user stories & acceptance criteria
 ├── design/
-│   ├── system_design.md
-│   │   # UML architecture and system design documentation
-│   ├── usecase_diagram_expanded.png
-│   │   # Expanded Use Case Diagram
-│   ├── sequence_diagram.png
-│   │   # Authentication and Request Flow Sequence Diagram
-│   ├── activity_diagram.png
-│   │   # 3-Swimlane Fulfillment Flow Activity Diagram
-│   └── class_diagram.png
-│       # Domain Entity Class Diagram
-│
+│   ├── usecase_diagram_expanded.png      # UML Expanded Use Case Diagram (3 Actors)
+│   ├── sequence_diagram.png              # UML Sequence Diagram (Authentication & Session)
+│   ├── activity_diagram.png              # UML Activity Diagram (Outbound Stock Fulfillment)
+│   └── class_diagram.png                 # UML Class Diagram (Domain Entities & Multiplicities)
 ├── testing/
-│   ├── qa_test_report.md
-│   │   # QA summary report
-│   └── Testing.xlsx
-│       # Master 40-case test matrix
-│
+│   ├── Testing.xlsx                      # Master 40-Case QA Test Matrix Spreadsheet
+│   └── defect_log.md                     # Root-cause analysis of 10 failed design test cases
 ├── project_management/
-│   └── sprint_1_backlog.md
-│       # Product backlog, story points, and Sprint 1 plan
-│
-├── Final_Project_Report.docx
-│   # Complete Final Project Report
-│
-└── README.md
-    # Project documentation and setup guide
+│   ├── Planning_WMS.xlsx                 # 8-Week Agile Sprint Schedule with Excel Gantt Chart
+│   ├── gantt_chart.png                   # High-Resolution 300 DPI Project Delivery Gantt Chart
+│   └── trello_sprint_board.png           # Trello Kanban Sprint Board Snapshot
+├── Final_Project_Report.docx             # Complete APA 7th Compliant Final Project Report
+└── README.md                             # Project overview and repository guide
 ```
 
 ---
 
-## 4. Agile Workflow & Version Control
-
-The project follows an **Agile Scrum framework** combined with a **Git feature-branch workflow**.
-
-### Git Workflow
-
-* `main` contains verified and stable releases.
-* Feature branches follow the naming convention:
-  `feature/wms-xx-description`
-* Each feature is developed independently before being merged.
-* Pull requests are reviewed and verified before merging.
-* GitHub is used for source-code and version-control management.
-
-### Agile/Scrum Workflow
-
-* **Trello** is used to manage the product and sprint backlog.
-* User stories are assigned story points based on their estimated complexity.
-* Sprint progress is monitored through the Trello board.
-* The team uses the backlog to track development responsibilities and sprint progress.
-* Testing and verification are performed before features are considered complete.
+## 🧪 Testing & Quality Assurance Summary
+* **Total Test Cases Evaluated:** 40 Test Cases across 10 User Stories (4 per story).
+* **Testing Levels Covered:** Unit Testing, Integration Testing, System Testing, and User Acceptance Testing (UAT).
+* **Passed Cases:** 30 Cases (75% Pass Rate).
+* **Failed Cases:** 10 Cases (25% Defect Rate).
+* **Defect Classifications:** Input validation defects, boundary negative quantity faults, external service timeout handling, lifecycle state constraints, entity duplicate insertions, workflow state-machine violations, concurrency bin locking faults, business rule validations, hardware fault tolerance, and audit immutability constraints.
+* **Master Test Spreadsheet:** `testing/Testing.xlsx` and live Google Drive matrix link.
 
 ---
 
-## 5. Requirements
-
-The system requirements are documented in:
-
-`requirements/requirements_specification.md`
-
-The requirements specification contains:
-
-* **FR-01 to FR-10:** Functional Requirements
-* Non-Functional Requirements
-* System constraints
-* User and system interactions
-
----
-
-## 6. System Design
-
-The system design is documented in:
-
-`design/system_design.md`
-
-The project includes the following UML and system models:
-
-| Diagram                       | Purpose                                                         |
-| ----------------------------- | --------------------------------------------------------------- |
-| **Expanded Use Case Diagram** | Defines system actors, use cases, and their relationships       |
-| **Sequence Diagram**          | Represents authentication and request-processing interactions   |
-| **Activity Diagram**          | Models the warehouse fulfillment workflow using three swimlanes |
-| **Class Diagram**             | Represents the system's domain entities and their relationships |
-
----
-
-## 7. Testing & Quality Assurance
-
-The project includes a structured testing process covering **40 test cases**.
-
-Testing deliverables are located in the `testing/` directory:
-
-* `qa_test_report.md` — QA summary and test results
-* `Testing.xlsx` — Master test-case matrix
-
-The QA report records the execution results of the test cases, including both passing and failing cases, and provides a basis for identifying areas requiring further improvement.
-
----
-
-## 8. Project Management
-
-Sprint planning and task tracking are managed through Trello.
-
-The Sprint 1 backlog is documented in:
-
-`project_management/sprint_1_backlog.md`
-
-The backlog includes:
-
-* User stories
-* Story points
-* Sprint assignments
-* Task priorities
-* Development responsibilities
-
----
-
-## 9. User Stories
-
-The project is organized around the following user-story assignments:
-
-| User Story | Assigned Team Member |
-| ---------- | -------------------- |
-| WMS-01     | Ankit Katwal         |
-| WMS-02     | Shivam Khadka        |
-| WMS-03     | Ankit Katwal         |
-| WMS-04     | Sabrin Manandhar     |
-| WMS-05     | Sabrin Manandhar     |
-| WMS-06     | Ankit Katwal         |
-| WMS-07     | Shivam Khadka        |
-| WMS-08     | Shivam Khadka        |
-| WMS-09     | Sabrin Manandhar     |
-| WMS-10     | Ankit Katwal         |
-
----
-
-## 10. Live Links & Deliverables
-
-### Master Test Matrix
-
-The master testing spreadsheet is available through Google Sheets:
-
-[Master Test Matrix – Google Sheets](https://docs.google.com/spreadsheets/d/1mdZHp1IVuzcRRwkW0LrXoaDRFCk_5oth/edit?usp=sharing&ouid=108925449514102250579&rtpof=true&sd=true&utm_source=chatgpt.com)
-
-### Trello Board
-
-**Warehouse Stock Inventory System Sprint Board**
-
-The Trello board is used for sprint planning, backlog management, story-point allocation, task tracking, and sprint progress monitoring.
-
----
-
-## 11. Project Deliverables
-
-The final project includes the following major deliverables:
-
-1. Requirements Specification
-2. System Design Documentation
-3. Expanded Use Case Diagram
-4. Sequence Diagram
-5. Activity Diagram
-6. Class Diagram
-7. QA Test Report
-8. 40-Case Testing Matrix
-9. Sprint 1 Backlog
-10. Final Project Report
-11. Project README and documentation
-
----
-
-## 12. Project Objective
-
-The primary objective of the Warehouse Stock Inventory System is to demonstrate the practical application of software engineering principles in developing a structured warehouse management solution.
-
-The project combines **requirements engineering, Agile project management, UML modeling, version control, software testing, and collaborative development** to produce a maintainable and systematically engineered software solution.
-
----
-
-## 13. Academic Project Information
-
-**Course:** CSE 220 – Principles of Software Engineering
-**Institution:** International American University (IAU)
-**Instructor:** Professor Gaman Aryal
-**Project:** Warehouse Stock Inventory System
-**Date:** August 2026
+## 🚀 Deliverables & Version Control Policy
+* **Branching Strategy:** Feature-branch workflow (`feature/wms-01-auth`, `feature/wms-02-stock-intake`, etc.).
+* **Pull Request Policy:** Peer code/document review required prior to merging into `main`.
+* **Documentation Standard:** APA 7th Edition Student Paper Format.
