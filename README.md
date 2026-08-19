@@ -1,9 +1,5 @@
 # Warehouse Stock Inventory System (WMS)
 **Course:** CSE 220: Principles of Software Engineering  
-**Institution:** International American University (IAU)  
-**Instructor:** Professor Gaman Aryal  
-**Date:** August 2026  
-
 ---
 
 ## Engineering Team & Roles
