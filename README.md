@@ -6,14 +6,14 @@
 
 ---
 
-## 👥 Engineering Team & Roles
+## Engineering Team & Roles
 * **Ankit Katwal** — Team Lead & Lead Software Architect (Product Owner)
 * **Sabrin Manandhar** — Scrum Master & Senior QA Lead (Quality Assurance Specialist)
 * **Shivam Khadka** — DevOps Lead & Senior Systems Engineer (Configuration Manager)
 
 ---
 
-## 📌 Project Overview & Scope
+## Project Overview & Scope
 The **Warehouse Stock Inventory System** is an enterprise-grade software engineering project simulating the complete software development lifecycle without raw source-code compilation. The system modernizes manual warehouse logistics through automated intake registration, handheld barcode scanning, real-time availability checking, low-stock threshold alerting, priority order queueing, atomic stock reservation, automated supplier replenishment, itemized dispatch packing slip generation, and immutable transaction audit logging.
 
 ---
@@ -27,7 +27,7 @@ The project was executed across an exact **8-week lifecycle (56 calendar days)**
 
 ---
 
-## 📂 Repository Directory Structure
+## Repository Directory Structure
 ```text
 warehouse-stock-inventory-system/
 ├── requirements/
@@ -53,7 +53,7 @@ warehouse-stock-inventory-system/
 
 ---
 
-## 🧪 Testing & Quality Assurance Summary
+## Testing & Quality Assurance Summary
 * **Total Test Cases Evaluated:** 40 Test Cases across 10 User Stories (4 per story).
 * **Testing Levels Covered:** Unit Testing, Integration Testing, System Testing, and User Acceptance Testing (UAT).
 * **Passed Cases:** 30 Cases (75% Pass Rate).
