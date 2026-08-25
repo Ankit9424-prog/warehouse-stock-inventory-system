@@ -43,7 +43,6 @@ warehouse-stock-inventory-system/
 │   ├── Planning_WMS.xlsx                 # 8-Week Agile Sprint Schedule with Excel Gantt Chart
 │   ├── gantt_chart.png                   # High-Resolution 300 DPI Project Delivery Gantt Chart
 │   └── trello_sprint_board.png           # Trello Kanban Sprint Board Snapshot
-├── Final_Project_Report.docx             # Complete APA 7th Compliant Final Project Report
 └── README.md                             # Project overview and repository guide
 ```
 
